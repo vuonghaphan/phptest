@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9d77422-21f4-4613-99ce-1e412089147d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1hPAldY4s60UvXES9SrAKVDJNmJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9d77422-21f4-4613-99ce-1e412089147d" name="Default Changelist" comment="" />
+      <created>1599902505634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599902505634</updated>
+      <workItem from="1599902506812" duration="629000" />
+      <workItem from="1599910069672" duration="10361000" />
+      <workItem from="1599933389833" duration="1916000" />
+      <workItem from="1599962479045" duration="13943000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1599917706142">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1599917706142" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1599969650292">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1599969650292" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599978052168">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599978052168" />
+  </component>
+</project>
