@@ -29,6 +29,7 @@ if (isset($_GET['id'])){
     $id = 1;
 }
 
+
 $dataStore = file_get_contents('stores.json');
 $stores = json_decode($dataStore, true);
 
@@ -51,7 +52,7 @@ $products = json_decode($dataProducts,true);
                 </div>
                 <nav class="menu">
                     <ul class="sidebar-menu metismenu" id="sidebar-menu">
-                        <?php foreach( $stores as $key => $value){
+                        <?php foreach( $stores as  $value){
                                 foreach ($value as $item => $str){
                             ?>
                         <li class="">
@@ -59,7 +60,10 @@ $products = json_decode($dataProducts,true);
                                 <i class=""></i> <?php echo $str['name']; ?>
                             </a>
                         </li>
-                        <?php } } ?>
+                        <?php
+                                }
+                            }
+                        ?>
                     </ul>
                 </nav>
             </div>
@@ -69,9 +73,9 @@ $products = json_decode($dataProducts,true);
             <div class="row">
                 <div class="col-lg-12">
                     <h1> Store Menu  <?php echo $id ?></h1>
-
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-10">
                     <button type="button" class="btn btn-dark">Filler</button>
@@ -83,31 +87,54 @@ $products = json_decode($dataProducts,true);
                             Name
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">Name</button>
+                            <button class="dropdown-item" type="button"><a>Name</a></button>
                             <button class="dropdown-item" type="button">Another action</button>
                             <button class="dropdown-item" type="button">Something else here</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- filler -->
             <div class="row">
-                <?php foreach ($storesProduct as $key => $value) {
-                        foreach ($value as $key => $item) {
-                            if ($id == $item['shop']) {
-                                $idProduct = $item['product'];
-                                foreach ($products as $key => $product){
-                                    foreach ($product as $key => $prd){
+                <div class="col-lg-12">
+                    <div class="card text-center">
+                        <div class="">
+                            <h4>Toppings:</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <?php for ($i = 1; $i < 7; $i++ ){ ?>
+                                <div class=" col-md-4 bottom">
+                                    <label>
+                                        <input type="checkbox"  class="">
+                                        Milk foam
+                                    </label>
+                                </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end filler -->
+            <div class="row">
+                <?php foreach ($storesProduct as  $storeProduct) {
+                        foreach ($storeProduct as $strProduct) {
+                            if ($id == $strProduct['shop']) {
+                                $idProduct = $strProduct['product'];
+                                foreach ($products as  $product){
+                                    foreach ($product as  $prd){
                                         if ($idProduct == $prd['id']){
                                         ?>
-                                        <div class="col-lg-3 ">
-                                        <div class="card border-dark mb-3 css" style="max-height: 220px;">
-                                            <div class="card-header bg-transparent border-dark"><?php  echo 'MT-0'.$prd['id']?></div>
-                                            <div class="card-body text-dark" style="padding: 1px">
-                                                <h5 class="card-title"><?php echo $prd['name']; ?></h5>
-                                                <p class="card-text" style="padding-bottom: 2px">Toppings: <?php echo $prd['toppings'];?></p>
+                                        <div class="col-md-4 ">
+                                            <div class="card border-dark mb-3 css" style="max-height: 220px;">
+                                                <div class="card-header bg-transparent border-dark"><?php  echo 'MT-0'.$prd['id']?></div>
+                                                    <div class="card-body text-dark" style="padding: 1px">
+                                                        <h5 class="card-title"><?php echo $prd['name']; ?></h5>
+                                                        <p class="card-text" style="padding-bottom: 2px">Toppings: <?php echo $prd['toppings'];?></p>
+                                                    </div>
+                                                <div class="card-footer bg-transparent border-dark"><?php echo '$'.$prd['price']; ?></div>
                                             </div>
-                                            <div class="card-footer bg-transparent border-dark"><?php echo '$'.$prd['price']; ?></div>
-                                        </div>
                                         </div>
                                         <?php
                                     }
